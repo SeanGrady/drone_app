@@ -1,0 +1,17 @@
+<html ng-app="drone_module">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <script src="client.js"></script>
+    </head>
+    <body>
+        <title>Drone app nonsense</title>
+        <div ng-controller="droneController as dc">
+            STATUS: {{dc.current_status}}
+            <div>
+                <button ng-click="dc.updateStatus()">update status</button>
+                <button ng-click="dc.launchButton()">launch</button>
+                <button ng-click="dc.landButton()">land</button>
+            </div>
+        </div>
+    </body>
+</html>
